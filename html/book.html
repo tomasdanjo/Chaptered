@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaptered</title>
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <main class="flex-row">
+      <section id="sidebar-container" class="collapsed">
+        <section id="logo-container" class="flex-row">
+          <img src="../static\logo\logo.svg" alt="" />
+          <p>Chaptered</p>
+        </section>
+        <nav id="nav-container" class="flex-col">
+          <ul>
+            <li>
+              <a
+                class="nav-item flex-row"
+                href="../html/home.html"
+                onclick="toggleActive(this)"
+              >
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+              </a>
+            </li>
+            <li>
+              <a class="nav-item flex-row" onclick="toggleActive(this)">
+                <i class="fa-solid fa-compass"></i>
+                <p>Discover</p>
+              </a>
+            </li>
+            <li>
+              <a class="nav-item flex-row" onclick="toggleActive(this)">
+                <i class="fa-solid fa-bookmark"></i>
+                <p>Saved</p>
+              </a>
+            </li>
+            <li>
+              <a class="nav-item flex-row" onclick="toggleActive(this)">
+                <i class="fa-solid fa-shop"></i>
+                <p>shop</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section>
+          <button onclick="toggleSidebar()" id="toggle-sidfebar-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </section>
+      </section>
+
+      <section id="main-content-container" class="scrollable">
+        <header class="flex-row">
+          <section id="search" class="button flex-row">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              placeholder="Search book name, author , edition, ..."
+            />
+          </section>
+          <a id="profile" class="button flex-row">
+            <div class="img-container">
+              <img src="../static/profile/pp.jpg" alt="" />
+            </div>
+            <p>Thomas Danjo</p>
+          </a>
+          <a id="notification" class="button flex-row">
+            <i class="fas fa-bell"></i>
+          </a>
+        </header>
+
+        <section id="content" class="flex-col scrollable">
+          <section class="flex-row">
+            <div class="book-container">
+              <img src="../static/book/sorcerer's stone.png" alt="" />
+            </div>
+            <div class="flex-col">
+              <div class="flex-col">
+                <h2 class="book-title">
+                  Harry potter and the Sorcerer’s Stone
+                </h2>
+                <h3 class="book-author">J.K. Rowling</h3>
+              </div>
+              <p class="mt-auto">
+                <em>
+                  Get ready to uncover the dark secrets and betrayals in the
+                  book. A thrilling adventure awaits you.
+                </em>
+              </p>
+            </div>
+          </section>
+          <section class="flex-col" id="descripion-container">
+            <div class="flex-row"></div>
+            <section class="flex-row">
+              <section class="flex-col">
+                <div class="description-item flex-col">
+                  <h4>Description</h4>
+                  <p>
+                    Harry Potter and the Sorcerer’s Stone (also known as Harry
+                    Potter and the Philosopher’s Stone outside the US) is the
+                    first book in J.K. Rowling’s beloved fantasy series. The
+                    story follows 11-year-old Harry Potter, who discovers on his
+                    birthday that he is a wizard. He learns about his tragic
+                    past, where his parents were killed by the dark wizard Lord
+                    Voldemort, and how he miraculously survived Voldemort’s
+                    attack as a baby. Harry attends Hogwarts School of
+                    Witchcraft and Wizardry, where he makes friends, uncovers
+                    mysteries, and faces danger. Central to the plot is the
+                    Sorcerer’s Stone, a magical object capable of granting
+                    immortality, which Voldemort seeks to regain power. With his
+                    new friends Hermione Granger and Ron Weasley, Harry unravels
+                    secrets about the stone and proves his bravery by
+                    confronting evil forces to protect it. The book is a magical
+                    tale of friendship, courage, and self-discovery that
+                    introduces readers to a richly imaginative world.
+                  </p>
+                </div>
+              </section>
+              <section class="flex-col">
+                <div class="description-item flex-col">
+                  <h4>Editors</h4>
+                  <p>
+                    J.K. Rowling (Author), Barry Cunningham, Arthur A. Levine
+                  </p>
+                </div>
+                <div class="description-item flex-col">
+                  <h4>Language</h4>
+
+                  <p>Standard english (USA & UK)</p>
+                </div>
+                <div class="description-item flex-col">
+                  <h4>Paperback</h4>
+
+                  <p>
+                    paper textured, full color, 345 pages ISBN-10: 059035342X
+                    ISBN-13: 9780590353427
+                  </p>
+                </div>
+              </section>
+            </section>
+          </section>
+        </section>
+
+        <footer class="flex-col">
+          <section id="footer-links" class="flex-row">
+            <section class="flex-col">
+              <div class="flex-col">
+                <h4>About Us</h4>
+                <p>
+                  Chaptered is your gateway to a world of stories, offering
+                  personalized book recommendations and a seamless reading
+                  experience.
+                </p>
+              </div>
+            </section>
+            <section id="footer-social" class="flex-col">
+              <h4>Connect with Us</h4>
+              <div class="social-icons flex-row">
+                <a href="#" aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </section>
+
+            <section class="flex-col">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </section>
+          </section>
+
+          <section id="footer-copyright" class="flex-row">
+            <p>&copy; 2025 Chaptered. All Rights Reserved.</p>
+          </section>
+        </footer>
+      </section>
+    </main>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
